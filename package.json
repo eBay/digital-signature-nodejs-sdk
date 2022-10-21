@@ -1,7 +1,7 @@
 {
   "name": "digital-signature-nodejs-sdk",
   "version": "1.0.0",
-  "description": "A NodeJS SDK to generate and validate digital signature headers.",
+  "description": "NodeJS SDK to generate and validate digital signatures",
   "main": "lib/index.ts",
   "scripts": {
     "start": "ts-node examples/example.ts",
@@ -14,7 +14,7 @@
     "RSA"
   ],
   "author": "Lokesh Rishi",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "express": "^4",
     "jose": "^4"
@@ -34,5 +34,18 @@
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.2"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eBay/digital-signature-nodejs-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eBay/digital-signature-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/eBay/digital-signature-nodejs-sdk#readme"
 }
