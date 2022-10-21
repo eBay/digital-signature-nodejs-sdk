@@ -1,0 +1,167 @@
+{
+  "ED25519_SIGN": {
+    "digestAlgorithm": "sha256",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMC4CAQAwBQYDK2VwBCIEIJ+DYvh6SEqVTm50DFtMDoQikTmiCqirVv9mWG9qfSnF\n-----END PRIVATE KEY-----",
+    "jwe": "eyJhbGciOiJBMjU2R0NNS1ciLCJlbmMiOiJBMjU2R0NNIiwiemlwIjoiREVGIiwiaXYiOiJvSzFwdXJNVHQtci14VUwzIiwidGFnIjoiTjB4WjI4ZklZckFmYkd5UWFrTnpjZyJ9.AYdKU7ObIc7Z764OrlKpwUViK8Rphxl0xMP9v2_o9mI.1DbZiSQNRK6pLeIw.Yzp3IDV8RM_h_lMAnwGpMA4DXbaDdmqAh-65kO9xyDgzHD6s0kY3p-yO6oPR9kEcAbjGXIULeQKWVYzbfHKwXTY09Npj_mNuO5yxgZtWnL55uIgP2HL1So2dKkZRK0eyPa6DEXJT71lPtwZtpIGyq9R5h6s3kGMbqA.m4t_MX4VnlXJGx1X_zZ-KQ",
+    "signatureComponents": {
+      "method": "POST",
+      "authority": "localhost:8080",
+      "path": "/test"
+    },
+    "signatureParams": [
+      "content-digest",
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  },
+  "ED25519": {
+    "digestAlgorithm": "sha256",
+    "jweHeaderParams": {
+      "alg": "A256GCMKW",
+      "enc": "A256GCM",
+      "zip": "DEF"
+    },
+    "jwtExpiration": 3,
+    "jwtPayload": {
+      "pkey": "MCowBQYDK2VwAyEAJrQLj5P/89iXES9+vFgrIy29clF9CC/oPPsw3c5D0bs="
+    },
+    "masterKey": "./examples/keys/masterkey.key",
+    "privateKey": "./examples/keys/ed25519/privatekey.pem",
+    "publicKey": "./examples/keys/ed25519/publickey.pem",
+    "signatureComponents": {
+      "method": "POST",
+      "authority": "localhost:8080",
+      "targetUri": "https://localhost:8080/test",
+      "path": "/test",
+      "scheme": "https",
+      "requestTarget": ""
+    },
+    "signatureParams": [
+      "content-digest",
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  },
+  "ED25519_GET": {
+    "digestAlgorithm": "sha256",
+    "jweHeaderParams": {
+      "alg": "A256GCMKW",
+      "enc": "A256GCM",
+      "zip": "DEF"
+    },
+    "jwtExpiration": 3,
+    "jwtPayload": {
+      "pkey": "MCowBQYDK2VwAyEAJrQLj5P/89iXES9+vFgrIy29clF9CC/oPPsw3c5D0bs="
+    },
+    "masterKey": "./examples/keys/masterkey.key",
+    "privateKey": "./examples/keys/ed25519/privatekey.pem",
+    "publicKey": "./examples/keys/ed25519/publickey.pem",
+    "signatureComponents": {
+      "method": "GET",
+      "authority": "localhost:8080",
+      "targetUri": "https://localhost:8080/test",
+      "path": "/test",
+      "scheme": "https",
+      "requestTarget": ""
+    },
+    "signatureParams": [
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  },
+  "ED25519_CONFIG_KEYS": {
+    "digestAlgorithm": "sha256",
+    "jweHeaderParams": {
+      "alg": "A256GCMKW",
+      "enc": "A256GCM",
+      "zip": "DEF"
+    },
+    "jwtExpiration": 3,
+    "jwtPayload": {
+      "pkey": "MCowBQYDK2VwAyEAJrQLj5P/89iXES9+vFgrIy29clF9CC/oPPsw3c5D0bs="
+    },
+    "masterKey": "uSA8lSm4fWRrDs8JvjS/Y6D5Ohp3mIKC4AhN/nBaGxs=",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMC4CAQAwBQYDK2VwBCIEIJ+DYvh6SEqVTm50DFtMDoQikTmiCqirVv9mWG9qfSnF\n-----END PRIVATE KEY-----",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJrQLj5P/89iXES9+vFgrIy29clF9CC/oPPsw3c5D0bs=\n-----END PUBLIC KEY-----",
+    "signatureComponents": {
+      "method": "POST",
+      "authority": "localhost:8080",
+      "targetUri": "https://localhost:8080/test",
+      "path": "/test",
+      "scheme": "https",
+      "requestTarget": ""
+    },
+    "signatureParams": [
+      "content-digest",
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  },
+  "RSA": {
+    "digestAlgorithm": "sha256",
+    "jweHeaderParams": {
+      "alg": "A256GCMKW",
+      "enc": "A256GCM",
+      "zip": "DEF"
+    },
+    "jwtExpiration": 3,
+    "jwtPayload": {
+      "pkey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr4tmm3r20Wd/PbqvP1s2+QEtvpuRaV8Yq40gjUR8y2Rjxa6dpG2GXHbPfvMs8ct+Lh1GH45x28Rw3Ry53mm+oAXjyQ86OnDkZ5N8lYbggD4O3w6M6pAvLkhk95AndTrifbIFPNU8PPMO7OyrFAHqgDsznjPFmTOtCEcN2Z1FpWgchwuYLPL+Wokqltd11nqqzi+bJ9cvSKADYdUAAN5WUtzdpiy6LbTgSxP7ociU4Tn0g5I6aDZJ7A8Lzo0KSyZYoA485mqcO0GVAdVw9lq4aOT9v6d+nb4bnNkQVklLQ3fVAvJm+xdDOp9LCNCN48V2pnDOkFV6+U9nV5oyc6XI2wIDAQAB"
+    },
+    "masterKey": "./examples/keys/masterkey.key",
+    "privateKey": "./examples/keys/rsa/privatekey.pem",
+    "publicKey": "./examples/keys/rsa/publickey.pem",
+    "signatureComponents": {
+      "method": "POST",
+      "authority": "localhost:8080",
+      "targetUri": "https://localhost:8080/test",
+      "path": "/test",
+      "scheme": "https",
+      "requestTarget": ""
+    },
+    "signatureParams": [
+      "content-digest",
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  },
+  "RSA_GET": {
+    "digestAlgorithm": "sha256",
+    "jweHeaderParams": {
+      "alg": "A256GCMKW",
+      "enc": "A256GCM",
+      "zip": "DEF"
+    },
+    "jwtExpiration": 3,
+    "jwtPayload": {
+      "pkey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr4tmm3r20Wd/PbqvP1s2+QEtvpuRaV8Yq40gjUR8y2Rjxa6dpG2GXHbPfvMs8ct+Lh1GH45x28Rw3Ry53mm+oAXjyQ86OnDkZ5N8lYbggD4O3w6M6pAvLkhk95AndTrifbIFPNU8PPMO7OyrFAHqgDsznjPFmTOtCEcN2Z1FpWgchwuYLPL+Wokqltd11nqqzi+bJ9cvSKADYdUAAN5WUtzdpiy6LbTgSxP7ociU4Tn0g5I6aDZJ7A8Lzo0KSyZYoA485mqcO0GVAdVw9lq4aOT9v6d+nb4bnNkQVklLQ3fVAvJm+xdDOp9LCNCN48V2pnDOkFV6+U9nV5oyc6XI2wIDAQAB"
+    },
+    "masterKey": "./examples/keys/masterkey.key",
+    "privateKey": "./examples/keys/rsa/privatekey.pem",
+    "publicKey": "./examples/keys/rsa/publickey.pem",
+    "signatureComponents": {
+      "method": "GET",
+      "authority": "localhost:8080",
+      "targetUri": "https://localhost:8080/test",
+      "path": "/test",
+      "scheme": "https",
+      "requestTarget": ""
+    },
+    "signatureParams": [
+      "x-ebay-signature-key",
+      "@method",
+      "@path",
+      "@authority"
+    ]
+  }
+}
