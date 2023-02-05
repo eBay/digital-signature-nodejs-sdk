@@ -17,7 +17,8 @@
         "lib": [
             "es6",
             "dom",
-            "es2021"
+            "es2021",
+            "ES2021.String"
         ],
         "typeRoots": [
             "node_modules/@types",
