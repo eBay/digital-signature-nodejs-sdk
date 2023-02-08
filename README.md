@@ -54,7 +54,7 @@ For more details on Digital Signatures for eBay APIs
 **Prerequisites**
 
 ```
-NodeJS: v12 or higher
+NodeJS: v16 or higher
 NPM: v7 or higher
 ```
 

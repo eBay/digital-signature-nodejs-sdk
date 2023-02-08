@@ -14,7 +14,6 @@ pids
 *.pid
 *.seed
 *.pid.lock
-package-lock.json
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
