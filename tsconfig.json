@@ -2,8 +2,9 @@
     "compilerOptions": {
         "target": "ES2020",
         "module": "commonjs",
-        "outDir": "bin",
-        "rootDir": "lib",
+        "declaration": true,
+        "outDir": "lib/esm",
+        "rootDir": "src",
         "strict": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
@@ -22,7 +23,7 @@
         ],
         "typeRoots": [
             "node_modules/@types",
-            "lib/types"
+            "src/types"
         ],
         "esModuleInterop": true,
         "skipLibCheck": true,
@@ -31,9 +32,7 @@
         "useUnknownInCatchVariables": false,
     },
     "include": [
-        "lib/**/*.ts",
-        "lib/**/*.js",
-        "lib/constants.jts"
+        "./src"
     ],
     "exclude": [
         "node_modules",

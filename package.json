@@ -1,11 +1,17 @@
 {
   "name": "digital-signature-nodejs-sdk",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "NodeJS SDK to generate and validate digital signatures",
-  "main": "lib/index.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "start": "ts-node examples/example.ts",
-    "test": "eslint . && jest"
+    "test": "eslint . && jest",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run tsc"
   },
   "pre-commit": [
     "test"
