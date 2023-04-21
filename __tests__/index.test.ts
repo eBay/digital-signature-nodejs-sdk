@@ -20,9 +20,9 @@
 
 import { Response, Request } from 'express';
 import { jwtDecrypt } from 'jose';
-import { constants } from '../lib/constants';
-import { readKey } from '../lib/helpers/common';
-import * as DigitalSignatureSDK from '../lib/index';
+import { constants } from '../src/constants';
+import { readKey } from '../src/helpers/common';
+import * as DigitalSignatureSDK from '../src/index';
 
 const testData = require('./test.json');
 

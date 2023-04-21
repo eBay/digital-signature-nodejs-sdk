@@ -3,6 +3,7 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
+    "ignorePatterns": ["**/lib/*"],
     "rules": {
         "space-before-function-paren": [
             "error",
