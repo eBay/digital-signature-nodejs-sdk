@@ -21,10 +21,10 @@
 'use strict';
 
 import bodyParser from 'body-parser';
-import { constants } from '../lib/constants';
+import { constants } from '../src/constants';
 import express, { Request, Response } from 'express';
-import * as DigitalSignatureSDK from '../lib/index';
-import { needsContentDigestValidation } from '../lib/helpers/common';
+import * as DigitalSignatureSDK from '../src/index';
+import { needsContentDigestValidation } from '../src/helpers/common';
 
 const config: DigitalSignatureSDK.Config = require('./example-config.json');
 const configFull: DigitalSignatureSDK.Config = require('./example-config-full.json');
