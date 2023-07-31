@@ -1,6 +1,6 @@
 {
   "name": "digital-signature-nodejs-sdk",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "NodeJS SDK to generate and validate digital signatures",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
