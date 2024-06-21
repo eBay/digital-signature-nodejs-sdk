@@ -26,7 +26,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "express": "^4",
-    "jose": "^4"
+    "jose": "^4.15.5"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
